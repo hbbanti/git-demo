@@ -1,0 +1,90 @@
+body { padding: 0px; margin: 0px; font-size: 14px; color: #414042; font-family: 'Open Sans', sans-serif; -webkit-text-size-adjust: 100%; background: #fff; -webkit-text-size-adjust: 100%; }
+* { padding: 0px; margin: 0px; }
+.home-banner { background: url(../images/home-new-banner.jpg) no-repeat; background-size: cover; position: relative;}
+.home-banner-content { position: absolute; top:20%; bottom: 0; left: 0; right: 0; margin: 0 auto; height: 250px;}
+.home-banner-content h2 { font-size: 22px; color: #ffffff; text-align: center; }
+.cd-title { position: relative; height: 160px; line-height: 230px; text-align: center; }
+.cd-title h1 { color: #fff; font-weight: 300; font-size: 50px; margin-bottom: 30px; }
+.cd-intro { padding-left: 7%; }
+.cd-headline { color: #fff; font-weight: 300; font-size: 50px; margin-bottom: 30px; }
+.cd-words-wrapper { display: inline-block; position: relative; text-align: left; }
+.cd-words-wrapper b { display: inline-block; position: absolute; white-space: nowrap; left: 0; top: 0; }
+.cd-words-wrapper b.is-visible { position: relative; }
+.cd-headline.loading-bar span { display: inline-block; padding: .2em 0; }
+.cd-headline.loading-bar .cd-words-wrapper { overflow: hidden; vertical-align: top; }
+.cd-headline.loading-bar .cd-words-wrapper::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: #2b9fd9; z-index: 2; -webkit-transition: width 0.3s -0.1s; -moz-transition: width 0.3s -0.1s; transition: width 0.3s -0.1s; }
+.cd-headline.loading-bar .cd-words-wrapper.is-loading::after { width: 100%; -webkit-transition: width 3s; -moz-transition: width 3s; transition: width 3s; }
+.cd-headline.loading-bar b { top: .2em; opacity: 0; -webkit-transition: opacity 0.3s; -moz-transition: opacity 0.3s; transition: opacity 0.3s; }
+.cd-headline.loading-bar b.is-visible { opacity: 1; top: 0; }
+#fullpage .section { overflow: hidden; }
+/* Ends */
+@media only screen and (min-width:1281px) {
+.cd-intro { text-align: center; padding: 0px; }
+}
+@media only screen and (max-width:1210px) {
+.banner-inner { background-size: auto 100%!important; background-position: center!important }
+.banner-portfolio-inner { background-size: auto 100%!important; background-position: center!important }
+ul.phpList li { width: 50%; }
+.dotnetPartner ul.listing li { width: 33%; }
+.augemented-right { padding: 50px 5% 30px 5% }
+@media only screen and (max-width:1120px) {
+.container {
+padding-left:20px;
+padding-right:20px;
+}
+}
+@media only screen and (max-width:1100px) {
+}
+@media only screen and (max-width:1024px) {
+}
+@media only screen and (max-width:1023px) {
+}
+@media only screen and (max-width:959px) {
+}
+@media only screen and (min-width:768px) and (max-width:959px) {
+}
+@media only screen and (max-width:800px) {
+.home-banner { position: relative; height: 570px; }
+.cd-intro { padding: 0px; text-align: center; }
+.cd-headline { font-size: 45px; }
+.home-banner-content { top: 32%; }
+}
+@media only screen and (max-width:767px) {
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+.mobile-sales-app-fet .msa-fet-content-sec, .mobile-sales-app-fet .msa-fet-img-sec { width: 100%; }
+.home-banner { position: relative; height: 265px; }
+.cd-intro { padding: 0px; text-align: center; }
+.cd-headline { font-size: 27px; margin-bottom: 20px; line-height: inherit; }
+.home-banner-content h2 { font-size: 16px; }
+.home-banner-content { top: 23%; }
+}
+@media only screen and (max-width:600px) {
+.cd-headline { font-size: 33px; }
+}
+@media only screen and (max-width:550px) {
+}
+@media only screen and (max-width:479px) {
+}
+@media only screen and (max-width:399px) {
+}
+
+#entryContainer #scrolldown {
+  position: absolute;
+  margin-top: -50px;
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+a#scrolldown .down-arrow {
+  opacity: 0.3;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-transition: background-color 0.30s linear, border-color 0.30s linear, color 0.30s linear;
+  -moz-transition: background-color 0.30s linear, border-color 0.30s linear, color 0.30s linear;
+  -o-transition: background-color 0.30s linear, border-color 0.30s linear, color 0.30s linear;
+  transition: background-color 0.30s linear, border-color 0.30s linear, color 0.30s linear;
+}

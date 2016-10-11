@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<title>animation slider</title>
+<script type='text/javascript' src='js/jquery.js'></script>
+<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+<script type="text/javascript">
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+});
+jQuery(document).ready(function ($) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {
+            $('#scrolltotop').fadeIn('slow');
+        } else {
+            $('#scrolltotop').fadeOut('slow');
+        }
+    });
+    $('#scrolltotop').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+	$("#scrolldown").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content").offset().top
+    }, 1000);
+});
+});
+</script>
+
+</head>
+<body>
+<div id="fullpage">
+  <section id="section0" class="section home-banner">
+   <div class="home-banner-content">
+    <section class="cd-intro">
+     <h2><img src="images/logo.png" alt=""></h2>
+     <h1 class="cd-headline loading-bar">
+     <span>Together we can build - </span>
+     <span class="cd-words-wrapper">
+     <b class="is-visible">Mobile Apps</b>
+     <b>Enterprise Software</b> <b>Internet of Things</b>
+     <b>Wearables</b> <b>Big Data Solutions</b> </span> </h1>
+     <h2>COLLABORATE. INNOVATE. BUILD. SUCCEED. </h2>
+    </section>
+    <a id='scrolldown' href='#content' class='scrolldown'><img src='http://www.ganeshhousing.com/wp-content/themes/ganesh-child/images/icon-up.png' class='down-arrow' /></a>
+   </div>
+</section>
+  <script type='text/javascript' src='js/jquery.fullPage.js'></script> 
+  <script type='text/javascript' src='js/function.js'></script> 
+ </div>
+<script type="text/javascript">
+if(jQuery(window).width()>1024)
+	{
+		jQuery('#fullpage').fullpage({
+		});
+}
+</script>
+<div style="height:1000px;background:#ddd;width:100%;display:block;">&nbsp;</div>
+</body>
+</html>
